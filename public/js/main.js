@@ -25,16 +25,18 @@ $(function(){
         });
 
 
+    if ($('#vk_comments').length){
+        VK.init({apiId: 2931163, onlyWidgets: true});
+        VK.Widgets.Comments("vk_comments", {limit: 10, width: "1000", attach: "*"});
+    }
 
-    VK.init({apiId: 2931163, onlyWidgets: true});
-    VK.Widgets.Comments("vk_comments", {limit: 10, width: "1000", attach: "*"});
-
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=442767162518877";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
+    if ($('.fb-comments').length){
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=442767162518877";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }
 })
