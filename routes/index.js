@@ -6,6 +6,7 @@
 var pairFiles = require('../public/content/pair.json');
 var portraitFiles = require('../public/content/portrait.json');
 var weddingFiles = require('../public/content/wedding.json');
+var photobookFiles = require('../public/content/photobook.json');
 
 exports.index = function(req, res){
   res.render('index', { title: 'Фотограф Наталья Лукьянова' });
@@ -33,7 +34,7 @@ exports.wedding = function(req, res){
 }
 
 exports.photobook = function(req, res){
-    res.render('album', { title: 'Фотокниги | Фотограф Наталья Лукьянова', photos:weddingFiles });
+    res.render('album', { title: 'Фотокниги | Фотограф Наталья Лукьянова', photos:photobookFiles });
 }
 
 
