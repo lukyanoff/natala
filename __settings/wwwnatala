@@ -1,0 +1,4 @@
+server {
+        server_name www.natala.com.ua;
+        return 301 $scheme://natala.com.ua$request_uri;
+}

@@ -1,0 +1,9 @@
+extends _layout
+
+block content
+    #gallery
+        div#thumbs
+            - each photo in photos
+                a(href="#{photo.url}" title="Фотограф Наталья Лукьянова")
+                    img(alt='фотограф харьков', title='фотограф харьков', src='#{photo.thumb}')
+

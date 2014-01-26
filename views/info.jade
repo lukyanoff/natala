@@ -1,0 +1,43 @@
+extends _layout
+
+block content
+    .text
+        img(src='/img/01.jpg', alt='Фотограф Харьков')
+        h2 О себе
+        h3Меня зовут Наталья Лукьянова, я фотограф.
+        pЭто не хобби, не увлечение, не работа, это - образ жизни! Я люблю живые эмоциональные фотографии и верю в то, что все люди красивы.
+        pЯ бесконечно влюблена в свое занятие и стараюсь делать его максимально хорошо. Ваши улыбки, ваше счастье, ваша грусть - настоящие чувства, пойманные в рамку кадра - это разве не волшебство?!
+        h3 Контакты
+        p Если вам по душе мои работы, буду рада добавить в вашу жизнь немного счастья в картинках.
+        p Узнать о свободных датах можно связавшись со мной по телефону или другим удобным для вас способом:
+        address
+            ul.list
+                li +3 8 050 13 77 016
+                li +3 8 098 274 99 94
+            ul.list
+                li
+                    noindex
+                        a(href='http://vk.com/natala.lukianova' rel="nofollow") найти меня ВКонтакте
+                li
+                    noindex
+                        a(href='http://www.odnoklassniki.ru/natala.com.ua' rel="nofollow") на Одноклассниках
+                li
+                    noindex
+                        a(href='https://www.facebook.com/natala.lukianova' rel="nofollow") на Facebook
+                li
+                    noindex
+                        a(href='mailto:natala.com.ua@gmail.com' rel="nofollow") написать письмо
+        h3 Отзывы
+        p Здесь вы можете оставить свой отзыв о моей работе.
+    dl.tabs
+        dt.selected ВКонтакте
+            dd.selected
+                .tab-content
+                    #vk_comments
+            dt Facebook
+            dd
+                .tab-content
+                    #fb-root
+                    div.fb-comments(data-href="http://natala.com.ua" data-width="1000" data-numposts="10" data-colorscheme="light")
+
+

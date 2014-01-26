@@ -1,0 +1,314 @@
+body {
+    min-width: 1024px;
+    margin: 0;
+    padding: 0;
+    font: 14px/18px Helvetica, Arial, sans-serif;
+    color: #898888;
+    background-color: #fff;
+}
+
+a {
+    color: #5f72b1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+}
+
+#wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 1%;
+    overflow: hidden;
+    padding: 50px 0 0 0;
+}
+
+#logo {
+    margin: 0;
+    float: left;
+}
+
+#logo a {
+    display: block;
+    width: 316px;
+    height: 50px;
+    padding: 0;
+    overflow: hidden;
+    background: url(../img/bg-logo4.gif) no-repeat;
+    cursor: pointer;
+    text-indent: -1000px;
+}
+
+h2 {
+    margin: 30px 0 24px 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 25px 0 10px 0;
+    font-size: 14px;
+}
+
+#content p {
+    margin: 0 0 10px 0;
+}
+
+#content strong {
+    font-weight: normal;
+    color: #686868;
+}
+
+.nav {
+
+    float: right;
+    margin: 8px -8px 0 0;
+}
+
+#header .nav {
+    overflow: hidden;
+}
+
+.nav ul {
+    margin: 0 10px 0 -1px;
+    padding: 0;
+    list-style: none;
+    float: left;
+    text-transform: uppercase;
+}
+
+#header .nav ul {
+    background: url(../img/bg-nav.gif) no-repeat 0 50%;
+}
+
+.nav li {
+    float: left;
+    padding: 0 10px;
+}
+
+.nav a {
+    display: block;
+    padding: 4px 0 4px 8px;
+    color: #898888;
+}
+
+.nav a:hover, .nav .active a {
+    text-decoration: none;
+    color: #202020;
+}
+
+#footer {
+    height: 1%;
+    overflow: hidden;
+    background: url(../img/bg-line.gif) repeat-x;
+    padding: 10px 0 25px;
+    position: relative;
+}
+
+#footer .nav {
+    position: relative;
+    left: 50%;
+    float: left;
+    font-size: 12px;
+
+}
+
+#footer .nav div {
+    position: relative;
+    left: -50%;
+    float: left;
+}
+
+#footer .nav ul {
+    margin: 0;
+}
+
+#footer .nav li {
+    padding: 0 5px;
+}
+
+.nav-container {
+    height: 1%;
+    overflow: hidden;
+}
+
+#footer .nav-container {
+    padding: 0 0 0 30px;
+}
+
+#maincontent {
+    height: 1%;
+    overflow: hidden;
+    background: url(../img/bg-line.gif) repeat-x;
+    padding: 10px 0 40px;
+    position: relative;
+}
+
+#content {
+    height: 1%;
+    overflow: hidden;
+    padding: 700px 0 0 0;
+}
+
+.text {
+    height: 1%;
+    overflow: hidden;
+}
+
+.text img {
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 1%;
+    overflow: hidden;
+}
+
+.list li {
+    background: url(../img/bg-bullit.gif) no-repeat 0 8px;
+    padding: 1px 0 1px 10px;
+}
+
+#footer address {
+    padding: 0;
+    font-size: 12px;
+}
+
+#footer address ul {
+    text-align: center;
+}
+
+address a {
+    color: #898888;
+}
+
+address {
+    font-style: normal;
+}
+
+#footer address li {
+    display: inline;
+    padding: 0 5px;
+}
+
+#slides {
+    height: 682px;
+    width: 1024px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+
+}
+
+#slides ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#slides img {
+    margin: 0 auto;
+}
+
+#thumbs {
+    margin: 0;
+    padding: 0 0 1px 1px;
+    list-style: none;
+    height: 1%;
+    overflow: hidden;
+}
+
+#thumbs a {
+    float: left;
+    width: 169px;
+    height: 169px;
+    overflow: hidden;
+    margin: 1px 0 0 1px;
+}
+
+#thumbs img {
+    width: 169px;
+    height: 169px;
+}
+
+
+
+#page {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.tabs {
+    width: 1020px;
+    overflow: hidden;
+    font-size: 0.9em;
+    margin: 2em 0;
+    zoom: 1;
+    padding: 1px;
+    position: relative;
+}
+
+.tabs dt {
+    float: left;
+    line-height: 2;
+    height: 2em;
+    background: #cccccc;
+    border: 1px solid #cccccc;
+    border-bottom: 0;
+    padding: 0 1em;
+    position: relative;
+    left: 35px;
+    margin-right: 1px;
+    cursor: pointer;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+}
+
+.tabs dt:hover {
+    background-color: #898888;
+}
+
+.tabs dt.selected {
+    border-color: #cccccc;
+    background: #fff;
+    z-index: 3;
+    cursor: auto;
+}
+
+.tabs dd {
+    background: #fff;
+    display: none;
+    float: right;
+    width: 100%;
+    margin: 2em 0 0 -100%;
+    position: relative;
+    z-index: 2;
+}
+
+.tabs dd.selected {
+    display: block;
+}
+
+.tabs .tab-content {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
