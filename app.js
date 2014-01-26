@@ -43,6 +43,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -58,6 +59,10 @@ app.get('/album/pair', routes.pair);
 app.get('/album/portrait', routes.portrait);
 app.get('/album/wedding', routes.wedding);
 app.get('/album/photobook', routes.photobook);
+
+app.use(function(req, res){
+    res.redirect('/');
+});
 
 
 http.createServer(app).listen(app.get('port'), function(){
